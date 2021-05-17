@@ -8,7 +8,7 @@ div::before {
     display: inline-block;
     border: 1px dashed red;
     background: blue;
-    content: "";
+    content: " ";
 
     border-radius: 50%;
 }
