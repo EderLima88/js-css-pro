@@ -1,0 +1,30 @@
+div {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
+    /* border-radius: 50%; */
+    /* background: radial-gradient(closest-side, red 50%,cyan, yellow);    */
+}
+
+.padrao {
+    background: radial-gradient( red 50%,cyan, yellow); 
+}
+
+.formato-1{
+    background: radial-gradient(closest-side, red 50%,cyan, yellow);
+}
+.formato-2{
+    background: radial-gradient(circle at 100%, red 50%,cyan, yellow);
+}
+.formato-3{
+    background: radial-gradient(ellipse at top, red 50%,cyan, yellow);
+}
+
+.linear-repetido {
+    background: repeating-linear-gradient(to top left, red, red 1px, white 10px);
+}
+
+.radial-repetido {
+    background: repeating-radial-gradient(circle at 50%, white, white 10px, red 10px, red 20px);
+}

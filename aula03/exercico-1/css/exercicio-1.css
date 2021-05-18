@@ -19,3 +19,13 @@ div::before {
 div::after {
     content: "- Porto Alegre / RS";
 }
+
+
+/* não funciona 
+div::after:hover {
+}*/
+
+div:hover::after {
+    background: red;
+    border-bottom: 1px dashed white;
+}
