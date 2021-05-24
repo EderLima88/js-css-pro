@@ -1,0 +1,44 @@
+div {
+    width: 300px;
+    height: 300px; 
+    border: 1px solid black;
+    /* background: red; */
+    position: absolute;
+}
+.disco {
+    border-radius: 50%;
+    background: repeating-radial-gradient(circle at 50%, black 4px, black 7px, white 8px, white 1px);
+    margin-left: 50px;
+    z-index: -1;
+    position: absolute;
+    transition: 2s;
+}
+
+.centro {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    /* background: yellow; */
+    position: relative;
+    margin: 105px;
+    background-image: url("../css/capa-animada.gif");
+    background-size: cover;  
+}
+
+.capa {
+    background-image: url("../css/capa-disco.png");
+    background-size: cover;
+}
+
+.capa:hover {
+    background-image: url("../css/capa-animada.gif");
+    background-size: cover;
+}
+
+.disco:hover {
+       transform: translatex(200px);   
+}
+
+
+
+
