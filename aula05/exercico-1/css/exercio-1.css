@@ -1,9 +1,14 @@
+body {
+    margin: 100px;
+}
+
 div {
     width: 300px;
     height: 300px; 
     border: 1px solid black;
     /* background: red; */
     position: absolute;
+    
 }
 .disco {
     border-radius: 50%;
@@ -23,8 +28,17 @@ div {
     margin: 105px;
     background-image: url("../css/capa-animada.gif");
     background-size: cover;  
+    animation: rotate 5s linear infinite;
 }
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
 
+    to {
+        transform: rotate(359deg);
+    }
+}
 .capa {
     background-image: url("../css/capa-disco.png");
     background-size: cover;
@@ -39,6 +53,17 @@ div {
        transform: translatex(200px);   
 }
 
-
+.furo {
+    border: 2px solid white;
+    border-radius: 50%;
+    background: white;
+    width: 5px;
+    height: 5px;
+    /* position: absolute; */
+    margin-top: -155px;
+    margin-left: 148px;
+    z-index: 3;
+    
+}
 
 
