@@ -1,0 +1,36 @@
+body {
+    background: turquoise;
+    perspective: 800px;
+}
+
+
+.pessoa {
+    width: 250px;
+    height: 250px;
+    background: url(../img/medico.png);
+    transition: transform 1s;
+    border: 4px solid white;
+    position: relative;
+    margin: 0 auto;
+}
+
+.medico-1:hover {
+    transform: rotateX(45deg) rotateY(0) rotateZ(180deg);   
+}
+
+.medico-2:hover {
+    transform: rotate3d(0,1,0, 90deg);
+}
+
+.nome {
+    background: white;
+    padding: 4px;
+    color: gray;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.medico-3:hover {
+    transform: rotate3d(1, 0, 0, 90deg);
+}
