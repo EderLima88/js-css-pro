@@ -1,5 +1,9 @@
+body {
+    background: #002244;
+}
+
 .container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 400px;
     height: 400px;
     margin: 0 auto;
@@ -11,14 +15,16 @@
 }
 
 #cubo {
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     width: 100px;
     height: 100px;
      
 }
 
 .face {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
+    border: 1px dotted white;
+    border-radius: 10px;
     width: 100px;
     height: 80px;
     font-size: 60px;
@@ -56,4 +62,22 @@
 .embaixo {
     background: rgba(210, 0, 210, 0.7);
     transform: rotateX(-90deg) translateZ(50px);
+}
+
+/* rotacao */
+#cubo {
+    transform-style: preserve-3d;
+    /* transform: rotate3d(1, 0, 1, 45deg); */
+    animation-name: gira;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+@keyframes gira {
+    to {
+        transform: rotate3d(1, 0, 1, 360deg);
+    }
+
 }

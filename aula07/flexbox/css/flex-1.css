@@ -1,0 +1,32 @@
+body {
+    background: blue;
+}
+
+.container {
+    border: 2px solid white;
+    width: 640px;
+    height: 480px;
+
+    display: flex;
+    /* ========é do pai - container =============*/
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    justify-content: space-around;
+
+    /* alinha na vertical */
+    align-items: center;
+}
+
+.filho {
+    border: 2px solid yellow;
+    width: 100px;
+    height: 100px;
+
+    font-size: 40px;
+    color: white;
+}
+
+.alto {
+    height: 240px;
+}
