@@ -1,0 +1,30 @@
+body {
+    background: #002244;
+  }
+  
+  .container {
+    border: 3px solid white;
+    width: 640px;
+    height: 480px;
+  
+    display: flex;
+  }
+  
+  .filho {
+    color: white;
+    border: 2px solid yellow;
+    width: 100px;
+    height: 100px;
+
+    /* dois valores, 1 ou 0 , lig ou desl, ativa ou desativa o encolhimento */
+    /* o 1 é o padrão */
+    flex-shrink: 1;
+  }
+
+  .encolhe-mais {
+      /* acima de 1 diminui proporcionalmente oas demais filhoa do container */
+    flex-shrink: 10;
+  }
+
+  
+
