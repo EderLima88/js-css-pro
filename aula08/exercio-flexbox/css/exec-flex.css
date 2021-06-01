@@ -1,13 +1,26 @@
 html {
-    background: black;
+    /* background: black; */
     font-weight: bold;
+    height: 100vh; /*pode ser 1005 para manter o gradiente*/
 }
 body {
     background-image: linear-gradient(cyan, black);
+    
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     
+    
 }
+
+@media screen and (max-height: 400px) {
+    html, body {
+      height: auto;
+    }
+  
+    .welcome {
+      margin-top: 20px;
+    }
+  }
 
 .topo{
     display: flex;
@@ -34,6 +47,7 @@ header {
     justify-content:right;
     align-items: center;
     background:cyan;
+    
 
 }
 .contato {

@@ -1,0 +1,11 @@
+body {
+  background: red; }
+  body div {
+    border: 2px solid black; }
+    body div h1 {
+      color: yellow;
+      font-size: 12px; }
+    body div h2 {
+      color: grey; }
+
+/*# sourceMappingURL=ex-1.css.map */
