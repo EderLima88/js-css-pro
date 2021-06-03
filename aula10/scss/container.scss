@@ -1,0 +1,62 @@
+.container {
+    width: 640px;
+    height: 480px;
+    border: 2px solid white;
+    
+    @include borda-redonda();
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+   h1 {
+   color:white;
+   text-align: center;
+   }
+
+   .foto {
+       width: 156px;
+       height: 156px;
+       border: 1px solid $branco;
+       background: url(../img/#{$foto});
+       background-size: contain;
+       margin-bottom: 20px;
+       
+       @include borda-redonda();
+    //    @include sombra($branco);
+        @include sombra(6px, 4px, 10px, 10px, green); //quando 4 variaveis no mixin
+        // @include sombra(6px, 6px, green); duas variaveis no mixin
+   }
+   button {
+   background: $laranja;
+//    margin-top: 10px;
+//    @include borda-redonda();
+        @include botao-custom() {
+            border-radius: 10px;
+            color: white;
+            font-weight: bold; // dentro das chaves incherta o valor aqui!!!
+        };
+
+
+   //quando é alguma propriedade que se refere AO ELEMENTO PAI USAMOS O &
+   &:hover {
+       background: $fundo;
+       color: $laranja;
+       cursor: pointer;
+   }    
+}   
+
+p {
+   color: $branco;
+
+   &.curso {
+       font-size: 16px;
+       font-weight: bold;
+   }
+
+   &.local {
+       font-style: italic;
+   }
+}
+}

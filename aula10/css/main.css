@@ -1,0 +1,71 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: blue;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container {
+  width: 640px;
+  height: 480px;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .container h1 {
+  color: white;
+  text-align: center;
+}
+body .container .foto {
+  width: 156px;
+  height: 156px;
+  border: 1px solid white;
+  background: url(../img/medico.png);
+  background-size: contain;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 6px 4px 10px 10px green;
+}
+body .container button {
+  background: orange;
+  padding: 8px;
+  font-family: arial;
+  border: 1px solid white;
+  box-shadow: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+body .container button:hover {
+  background: blue;
+  color: orange;
+  cursor: pointer;
+}
+body .container p {
+  color: white;
+}
+body .container p.curso {
+  font-size: 16px;
+  font-weight: bold;
+}
+body .container p.local {
+  font-style: italic;
+}
+body footer {
+  background: orange;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

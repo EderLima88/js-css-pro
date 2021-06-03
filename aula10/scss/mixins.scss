@@ -1,0 +1,33 @@
+@mixin borda-redonda {
+    border-radius: 10px;
+}
+
+// @mixin sombra {
+//     box-shadow: 2px 2px 2px 2px $branco;
+// }
+
+// @mixin sombra ($cor) { //cariavel determinada no @include do container.scss
+//     box-shadow: 2px 2px 2px 2px $cor; 
+// }
+
+// @mixin sombra ($cor:yellow) { //caso não receba a cor no @include
+//     box-shadow: 2px 2px 2px 2px $cor; 
+// }
+
+    // @mixin sombra ($x:2px, $y:2px, $cor:red) {
+    //     box-shadow: $x $y 2px 2px $cor;
+    // }
+
+    @mixin sombra ($x:2px, $y:2px, $s:10px, $e:10px, $cor:red) {
+        box-shadow: $x $y $s $e $cor;
+    }
+
+    @mixin botao-custom {
+        padding: 8px;
+        font-family: arial;
+        border: 1px solid $branco;
+        box-shadow: none;
+
+        @content; //suportar contúdo que não está no mixin atravez das chaves no container.scss
+        //deixa suportar subescrever este conteúdo lá nas chaves do container.
+    }

@@ -1,9 +1,9 @@
 body {
-  background: red; }
+  background: orange; }
   body div {
-    border: 2px solid black; }
+    border: 1px solid green; }
     body div h1 {
-      color: yellow;
+      color: red;
       font-size: 12px; }
     body div h2 {
       color: grey; }

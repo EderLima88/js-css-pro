@@ -1,11 +1,17 @@
 //primeiro exemplo de sass
+
+$fundo: orange;
+$cor-titulo: red;
+$border: 1px solid green;
+
 body {
-    background: red;
+    background: $fundo;
 
     div {
-        border: 2px solid black;
+        // border: 2px solid black;
+            border: $border;
         h1 {
-            color:yellow;
+            color:$cor-titulo;
             font-size: 12px;
         }
         h2 {
