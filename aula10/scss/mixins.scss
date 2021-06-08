@@ -28,6 +28,15 @@
         border: 1px solid $branco;
         box-shadow: none;
 
-        @content; //suportar contúdo que não está no mixin atravez das chaves no container.scss
+        @content; //suportar conteúdo que não está no mixin atravez das chaves no container.scss
         //deixa suportar subescrever este conteúdo lá nas chaves do container.
+    }
+
+    @mixin bolinha-ou-quadrado ($bolinha: false) {
+        @if $bolinha {
+            border-radius: 50%;
+        } else {
+            border-radius: 0;
+        }
+        @content
     }
