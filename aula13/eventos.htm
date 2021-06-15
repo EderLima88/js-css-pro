@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventros</title>
+</head>
+<body>
+    
+<button type="button" id="btn">BOTÃO</button>
+
+<script>
+   var bot =  document.getElementById('btn');
+   var b = bot.style;
+   b.width = '150px';
+   b.height = '30px';
+   b.display = 'flex';
+   b.justifyContent = 'center';
+   b.alignItems = 'center';
+   b.borderRadius = '5px';
+   
+    function clicar () {
+        b.background = 'red';
+        b.color = 'white';
+    }
+
+    function clicar2 () {
+        b.height = '80px';
+    }
+
+    function displayDate() {
+    bot.innerHTML = new Date();
+}
+
+    bot.addEventListener('click', clicar);
+    bot.addEventListener('click', clicar2);
+
+    bot.addEventListener("click", displayDate);
+
+
+    //o ncli direto no elemntento atribui uma função por vez
+    // btn.onclick = clicar;
+    // btn.onclick = clicar2;
+
+
+</script>
+
+</body>
+</html>
