@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Filter Reduce</title>
+</head>
+<body>
+    <h1>Map Filter Reduce</h1>
+
+
+    <script>
+
+        const carros = ['Ford', 'Fiat', 'Honda'];
+
+        const listaCarros = carros.map( item => {
+            console.log(item);
+            return `Carro ${item}`
+        })
+
+        console.log(carros);
+        console.log(listaCarros);
+
+        const numero = [2,4,6,8,10,14,16];
+        
+        const numerosX3 = numero.map(pastel => pastel*3);
+        console.log (numerosX3);
+
+//=========================Aray de JSON+++++++++++++++++++
+
+const aulas = [
+    {
+        nome:'html 1',
+        tempo: 60
+    },
+    {
+        nome:'html 2',
+        tempo: 30
+    },
+    {
+        nome:'css 1',
+        tempo: 40
+    },
+    {
+        nome:'css 2',
+        tempo: 30,
+        correto: true
+    },
+    {
+        nome:'js 1',
+        tempo: 10,
+        correto: false
+    },
+    {
+        nome:'js 2',
+        tempo: 70
+    }
+]
+
+// const tempoDeAula = aulas.map(pastel => pastel.tempo)
+// console.log(tempoDeAula);
+
+// //==================Com condicional===================
+// // const tempoDeAula = aulas.map(item =>{
+//     // if(item.correto === false) return item    
+// // })
+// console.log(tempoDeAula);
+
+
+//================Filtro==============================================
+    const frutas = ['banana', undefined, null, '', 'uva', 0, 'maçã'];
+
+    // const arrayLimpa = frutas.filter(frutas => {
+    //     return frutas
+    // });
+
+    const arrayLimpa = frutas.filter(frutas => frutas === 'banana');
+
+    // const numero = [2,4,6,8,10,12,14,16]
+
+    const buscaMaior = numero.filter (numero => numero > 10)
+         console.log(buscaMaior);
+    
+    const filtraAulas = numero.filter (aulas => aulas > 10)
+
+    console.log(filtraAulas);
+
+
+    </script>
+</body>
+</html>
